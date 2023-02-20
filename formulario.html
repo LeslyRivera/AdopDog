@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="css/inicio.css" rel="stylesheet" type="text/css">
+    </head>
+    </br>
+    <div align="center">
+        <img src="css/forma.jpg" alt="" width="40%"
+        height="40%"/>
+    </div>
+    <div class="contenedorF">
+        <h3>Añade los datos a continuación para el formato de solicitud:</h3>
+    </div>
+    </br></br>
+    <form method="POST" action="guardar.php" enctype="multipart/form-data"  id="formulario" class="formulario"></br>
+        <div class="contenedorF2">
+        <p>Tu nombre:</p>
+        <input type="text" id="nombre" maxlength="45" pattern="[a-z A-Z ]+" title="Solo letras" name="nombre" required></br>
+
+        <p>Edad (numeros):</p>
+        <input type="text" name="edad" pattern="[0-9]{2}" title="Solo dos numeros" required placeholder="26"></br>
+
+        <p>Nombre del perro a adoptar:</p>
+        <input type="text" name="nombreperro" maxlength="10" pattern="[a-zA-Z]+" title="Solo letras, demasiado largo, no existe" required></br>
+        </br>
+
+        <h3>Datos de domicilio</h3>
+        <p>Colonia:</p>
+        <input type="text" name="colonia" maxlength="45" pattern="[a-z A-Z ]+" title="Solo letras" required></br>
+
+        <p>Ciudad:</p>
+        <input type="text" name="ciudad" maxlength="45" pattern="[a-z A-Z ]+" title="Solo letras" required></br>
+
+        <p>Delegación:</p>
+        <input type="text" name="delegacion" maxlength="45" pattern="[a-z A-Z ]+" title="Solo letras" required></br>
+
+        <p>C.P:</p>
+        <input type="text" name="cp" title="Solo numeros, C.P no existente" required placeholder="12345" pattern="[0-9]{5}"></br>
+        </br>
+
+        <h3>Contactos</h3>
+        <p>Número de celular:</p>
+        <input type="text" name="cel" pattern="[0-9]{10}" title="Numero no existente, agrega 55 si es de casa" required placeholder="5516547892"></br>
+
+        <p>Email:</p>
+        <input type="email" name="email" required placeholder="correo@correo.com"></br>
+
+        <p>Identificación Oficial:</p>
+        <input type="file" name="foto" id="foto" required></br></br>
+        <button type="submit" name="submit" class="btnformulario">ENVIAR</button></br>
+        </div>        
+    </form>
+    </br></br> </br>                
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AdopDog</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script>
+    function peticionAsincrona(pagina) { 
+        var ajax = new XMLHttpRequest(); 
+          ajax.onreadystatechange = function() { 
+            if (this.readyState == 4 && this.status == 200) { 
+                respuesta(this); 
+            } 
+          };
+            ajax.open("GET", pagina, true); 
+            ajax.send(); 
+      }
+      function respuesta(ajax) { 
+          var html = ajax.responseText; 
+          document.getElementById("contenedor").innerHTML = html; 
+      } 
+      function btn_click2(){
+        console.log("btn_click2");
+        peticionAsincrona("SobreNosotros.html");
+      }   
+      function btn_click3(){
+        console.log("btn_click3");
+        peticionAsincrona("Adoptar.html");
+      } 
+      function btn_click4(){
+        console.log("btn_click4");
+        peticionAsincrona("Contacto.html");
+      } 
+      function btn_click5(){
+        console.log("btn_click5");
+        peticionAsincrona("formulario.html");
+      }  
+
+    </script>
+  </head>
+
+  <body>
+    <table border="0px" width="100%" height="100%">
+        <div class="div1">
+        </div>
+        <tr class="tr1" >
+            <td>
+                <img src="css/logo.png" height="30px">
+                <span>AdopDog</span>
+            </td>
+            <td>
+                <a href="inicio.html">Inicio</a>
+            </td>
+            <td>
+                <input type="button" id="btn2" value="Sobre Nosotros" onclick="btn_click2()"/>
+            </td>
+            <td>
+                <input type="button" id="btn3" value="Adopciones" onclick="btn_click3()"/>
+            </td>
+            <td>
+                <input type="button"  id="btn4" value="Contacto" onclick="btn_click4()"/>
+            </td>
+        </tr>
+    </table>
+    
+    <div id="contenedor">
+      <section class="area">
+        <img src="css/hero.jpg" alt=""/>
+          <h2>AdopDog</h2>
+          <h3>
+            Una oportunidad de tener un nuevo amigo
+          </h3> 
+          <p>
+          "Cada animal rescatado deja una huella en el corazón"
+          </p> 
+          <div>
+          <input class="abajo" type="button" value="Adopta ahora" onclick="btn_click3()"/>
+          <input class="abajo2" type="button" value="Contacto de albergue" onclick="btn_click4()"/>  
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

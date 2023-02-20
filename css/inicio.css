@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #000000; 
+    padding: 5px 5px;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.div1{
+    border: 5px solid #206c7c;
+}
+input{
+    background-color:#e5e5e5 ;; 
+    padding: 5px 5px;
+    font-size: 13px;
+    border: none;
+}
+.abajo{
+    background-color: #206c7c; 
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.abajo2{
+    background-color: #ffffff; 
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.tr1{
+    background-color:#e5e5e5 ;
+    border:none;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-style:solid;
+    border-collapse:collapse;
+}
+.area{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    position: relative;
+}
+.area img{
+    width: 100%;
+    height: 100%;
+}
+.area h2{
+    font-size: 2rem;
+    color: #000000;
+    position: absolute;
+    top: 15%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+}
+.area h3{
+    width: auto;
+    height: auto;
+    color: #000000;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+.area p{
+    color: #000000;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+.area div{
+    color: #000000;
+    position: absolute;
+    top: 60%;
+    left: 24.5%;
+    transform: translate(-50%,-50%);
+}
+.sntexto{
+    font-size: 1.5rem;
+    text-indent: 50px;
+}
+.tituloA{
+    font-size: 2rem;
+    font-weight:bold;
+    text-align: center;
+}
+.contenedorform img{
+    float: left;
+}
+.contenedorform p{
+    text-align: left;
+}
+.btnadoptar{
+    border: none;
+    text-align: center;
+    align-content: center;
+}
+.btnadoptar input{
+    padding: 10px 10px;
+    background-color:#206c7c; 
+    font-size: 15px; 
+    color: #ffffff;
+}
+.contenedorcontact img{
+    float: left;
+}
+.contact{
+    text-align: center;
+    align-content: center;
+}
+.contact img{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+.contenedorF{
+    color: #000000;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+}
+.contenedorF2{
+    color: #000000;
+    position: absolute;
+    top: 95%;
+    left: 24.5%;
+    transform: translate(-50%,-50%);
+}
+.contenedorF2 input{
+   border: 5px  #206c7c;
+   border-radius: 3px 3px 3px 3px;
+   color: #000000;
+   font-size: 12px;
+   padding: 5px;
+   width: 100%;
+   height: 100%;
+   outline: none;
+}
+.btnformulario{
+    padding: 10px 30px;
+    background-color:#206c7c; 
+    font-size: 15px; 
+    color: #ffffff;
+    border: none;
+}
